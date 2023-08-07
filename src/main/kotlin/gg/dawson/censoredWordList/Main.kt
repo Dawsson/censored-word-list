@@ -25,7 +25,7 @@ fun generateWordList(minimumWordLength: Int) {
         finalWordList.removeIf { word -> word.length < minimumWordLength }
     }
 
-    File("wordList_${minimumWordLength}.txt").apply {
+    File("wordList_${minimumWordLength}.json").apply {
         createNewFile()
     }.writeText(GSON.toJson(finalWordList))
 }
