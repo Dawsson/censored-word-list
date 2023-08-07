@@ -15,8 +15,3 @@ inline fun <reified T> fetchAndParseJson(url: String): T {
     }
     return GSON.fromJson(jsonString, T::class.java)
 }
-
-
-//fun readWordListFromURL(url: String, type: ): Type =
-//    GSON.fromJson(URL(url).readText(), type)
-
